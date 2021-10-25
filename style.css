@@ -1,0 +1,242 @@
+/* navbar */
+
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+
+
+/* utility */
+
+.tombol {
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+
+/*  jumbotron */
+
+.jumbotron {
+    background-image: url(https://images.unsplash.com/photo-1503437313881-503a91226402?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron,
+.display-4 {
+    color: white;
+    font-size: 40px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+.jumbotron,
+.display-4 span {
+    font-weight: 500;
+}
+
+
+/* Info panel */
+
+.info-panel {
+    background-color: white;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel h1 {
+    font-size: 70px;
+    margin-right: 20px;
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: gray;
+    text-align: justify;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+.pannel-top {
+    position: relative;
+    z-index: 2;
+    margin-top: -150px;
+}
+
+
+/* Workingspace */
+
+.workingspace {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.workingspace h3 {
+    font-weight: 200;
+    font-size: 50px;
+}
+
+.workingspace h3 span {
+    font-weight: 500;
+}
+
+.workingspace p {
+    font-size: 18px;
+    font-weight: 200;
+    color: gray;
+    text-align: justify;
+}
+
+
+/* profile */
+
+.profile {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.profile h3 {
+    font-weight: 200;
+    font-size: 50px;
+}
+
+.profile h3 span {
+    font-weight: 500;
+}
+
+.profile p {
+    font-size: 18px;
+    font-weight: 200;
+    color: gray;
+    text-align: justify;
+}
+
+
+/* Experience */
+
+.experience {
+    margin-top: 100px;
+}
+
+.experience-box {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Footer */
+
+.footer {
+    margin-top: 100px;
+}
+
+.footer p {
+    color: #acacac;
+    font-size: 18px;
+}
+
+
+/* Carousel */
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel a {
+    color: white !important;
+}
+
+.carousel-item img {
+    height: 500px;
+}
+
+.carousel-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+
+/* Desktop Version  */
+
+@media (min-width: 992px) {
+    .navbar-brand,
+    .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50% !important;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron {
+        margin-top: -75px;
+        height: 640px;
+    }
+    .jumbotron,
+    .display-4 {
+        font-size: 62px;
+    }
+    .workingspace {
+        text-align: left;
+    }
+    .profile {
+        text-align: left;
+    }
+}
